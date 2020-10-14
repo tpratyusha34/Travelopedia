@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>
+        Travelopedia
+    </title>
+
+<script>
+function validateForm() {
+  var name = document.forms["myForm"]["name"].value;
+  var email = document.forms["myForm"]["mail"].value;
+  var phone = document.forms["myForm"]["phone"].value;
+  var user = document.forms["myForm"]["uname"].value;
+  var pass = document.forms["myForm"]["pass"].value;
+  if (name == "") {
+    alert("Enter your name");
+    return false;
+  }
+  if(email=="")
+  {
+      alert("Enter your email id");
+      return false;
+  }
+  if(phone=="")
+  {
+      alert("Enter your phone number");
+      return false;
+  }
+  if(user=="")
+  {
+      alert("Enter your username");
+      return false;
+  }
+  if(pass=="")
+  {
+      alert("Enter your password");
+      return false;
+  }
+
+}
+</script>
+</head>
+<body bgcolor="#C0C0C0">
+
+<form name="myForm" action="Signup.php" onsubmit="return validateForm()" method="post">
+    <center>
+        <h1 style="font-family: Georgia, serif ;margin-top: 20px">Welcome to Travelopedia</h1>
+        <p style="font-size:23px;margin-top:25px"> Name:   <input type="text" name="name"placeholder="Enter your Name"></p>
+        <p style="font-size:23px"> Date:<input type="date" name="date"></p>
+     <p style="font-size:23px"> Email: <input type="email" name="mail"placeholder="Enter your email id"></p>
+         <p style="font-size:23px">Phone No:<input type="text" name="phone"placeholder="Enter your Phone number"pattern="[0-9]{10}"></p>
+         <p style="font-size:23px">Username:<input type="text" name="uname"placeholder="Enter your Username"></p>
+       <p style="font-size:23px"> Password <input type="password" name="pass"placeholder="Enter your Password"></p><br>
+  <input type="submit" value="Sign-Up">
+</form>
+</center>
+</body>
+</body>
+</html>
+

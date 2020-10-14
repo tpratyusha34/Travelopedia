@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            Travelopedia Login
+        </title>
+        <script>
+
+function validate() {
+  var uname = document.forms["login"]["uname"].value;
+  var pass = document.forms["login"]["pass"].value;
+  if (uname == "") {
+    alert("Enter your username");
+    return false;
+  }
+  if(pass=="")
+  {
+      alert("Enter your password");
+      return false;
+  }
+}
+        </script>
+
+    </head>
+    <body bgcolor="#C0C0C0">
+        
+        <center>
+            <h2 style="font-family: Georgia ;margin-top: 75px">Login Page </h2>
+            <form name="login" action="login.php" onsubmit="return validate()" method="post">
+                <center>
+     <p style="font-size:23px;margin-top:25px">  Username:<input type="text" name="uname"placeholder="Enter your Username"></p>
+     <p style="font-size:23px;margin-top:25px">   Password <input type="password" name="pass"placeholder="Enter your Password"></p>
+              <input type="submit" value="Login"><br><br>
+              
+
+              <a href="Signup.html">Dont have an account?Sign-up</a>
+<br><br>
+              <a href="admin.php">See the list of users here!!!</a>
+
+            </form> 
+            
+        </center>
+    </body>
+</html>
