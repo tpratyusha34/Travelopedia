@@ -1,5 +1,16 @@
 This is the description file which guides through the project:
-
+Travelopedia: This a project which can be used as journel for the travels made by a person.The user can constantly update his/her travels here and when required check the travels
+made by them.
 1.SignUp Page: This is the page where the new user logs in and sets up an account 
-2.Login Page: Once the user has created an account then he/she logs in to the website
+2.Login Page: Once the user has created an account then he/she logs in to the website.
+Here, there are 3 options which the user can choose
+->If the user has signed up then he can use the same credentials and log in
+->If the user is new then click on Sign-Up link to set up an account
+->If the user is admin and wants to see the logs of entry into the website then click on ADMIN link 
+3.List Page:Once user has logged in successfully then it directs to the list page where the user can wither add the details of his travel into the database
+or,
+can check his travels in the existing database
+4.Admin Page: This page shows all the ids that have been created in the website and the user can get here through the log in page 
+5.Connect.php File: This file connects the database and the website 
 
+Apart from this each of the 3 HTML pages have their own PHP pages which have also been updated in the repository
